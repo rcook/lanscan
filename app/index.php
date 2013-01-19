@@ -13,6 +13,7 @@
 <p>
   <a href="/privacy">Click on this link right here to read our privacy policy.</a>
 </p>
+<? require_once 'footer.php'; ?>
 </body>
 </html>
 

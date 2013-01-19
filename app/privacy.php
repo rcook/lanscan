@@ -7,7 +7,7 @@
 </head>
 <body>
 <div id="nav">
-  <a href="/">Home</a>
+  <a href="/">[Home]</a>
 </div>
 <h1>Lanscan privacy policy</h1>
 <h2>Personal information transmitted by this app</h2>
@@ -21,5 +21,6 @@
 </p>
 <h2>Is that really it?</h2>
 Yes. Lanscan is a port-scanning tool. Nothing else.
+<? require_once 'footer.php'; ?>
 </body>
 </html>
