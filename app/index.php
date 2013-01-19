@@ -8,7 +8,10 @@
 <body>
 <h1>Lanscan</h1>
 <p>
-  This is the home of <em>Lanscan</em>, the simple network scanning tool available in the Windows Store.
+  This is the home of Lanscan, a simple network scanning tool available in the Windows Store.
+</p>
+<p>
+  <a href="/privacy">Click on this link right here to read our privacy policy.</a>
 </p>
 </body>
 </html>

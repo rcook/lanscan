@@ -9,7 +9,7 @@
 <div id="nav">
   <a href="/">Home</a>
 </div>
-<h1>Privacy</h1>
+<h1>Lanscan privacy policy</h1>
 <h2>Does Lanscan use any of your information?</h2>
 <p>
   No. Lanscan scans ports. It does not collect any information from you nor does
