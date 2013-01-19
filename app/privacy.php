@@ -10,14 +10,14 @@
   <a href="/">Home</a>
 </div>
 <h1>Privacy</h1>
-<h2>Does Lanscan use any of your information?</h2>
+<h2>Personal information transmitted by this app</h2>
 <p>
-  No. Lanscan scans ports. It does not collect any information from you nor does
+  None. Lanscan scans ports. It does not collect any information from you nor does
   it relay any personal information to our, or anybody else's, servers.
 </p>
 <h2>Do we use cookies?</h2>
 <p>
-  No.
+  No. Lanscan does not maintain any user session information whatsoever.
 </p>
 <h2>Is that really it?</h2>
 Yes. Lanscan is a port-scanning tool. Nothing else.
