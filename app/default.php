@@ -1,7 +1,7 @@
 <? header('Content-Type: text/css'); ?>
 body {
   background-color: #0096FF;
-  color: #202020;
+  color: #EEEEEE;
   font-family: Segoe UI Semibold;
   padding: 50px;
 }
@@ -9,10 +9,10 @@ h1, h2 {
   font-family: Segoe UI Light, Arial, Verdana, sans-serif;
 }
 a {
-  color: #303030;
+  color: #101010;
 }
 a:hover {
-  color: #101010;
+  color: #404040;
 }
 #nav {
   position: fixed;
@@ -23,6 +23,7 @@ a:hover {
   margin: 5px 5px 5px 120px;
 }
 #footer {
+  color: #202020;
   border-top: 1px solid #000000;
   margin-top: 50px;
   text-align: right;
