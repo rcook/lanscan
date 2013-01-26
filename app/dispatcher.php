@@ -4,12 +4,16 @@ if ($requestUri == '/') {
   require_once 'index.php';
   exit(0);
 }
+elseif ($requestUri == '/default.css') {
+  require_once 'default.php';
+  exit(0);
+}
 elseif ($requestUri == '/privacy') {
   require_once 'privacy.php';
   exit(0);
 }
-elseif ($requestUri == '/default.css') {
-  require_once 'default.php';
+elseif ($requestUri == '/release-notes') {
+  require_once 'release-notes.php';
   exit(0);
 }
 
