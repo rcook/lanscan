@@ -27,5 +27,5 @@ $contentHtml = <<<END
   Initial release.
 </p>
 END;
-require_once 'template.php';
+require 'template.php';
 

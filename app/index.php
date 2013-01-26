@@ -12,5 +12,5 @@ $contentHtml = <<<END
   <a href="/privacy">Click on this link to read our privacy policy.</a>
 </p>
 END;
-require_once 'template.php';
+require 'template.php';
 

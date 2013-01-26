@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>Lanscan | Privacy policy</title>
-  <link rel="stylesheet" href="/default.css">
-</head>
-<body>
+<?
+$title = 'Lanscan privacy policy';
+$contentHtml = <<<END
 <div id="nav">
   <a href="/">[Home]</a>
 </div>
@@ -21,6 +16,6 @@
 </p>
 <h2>Is that really it?</h2>
 Yes. Lanscan is a port-scanning tool. Nothing else.
-<? require_once 'footer.php'; ?>
-</body>
-</html>
+END;
+require 'template.php';
+
