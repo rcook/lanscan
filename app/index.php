@@ -1,17 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>Lanscan</title>
-  <link rel="stylesheet" href="/default.css">
-</head>
-<body>
-<div id="logo">
-  <img src="/static/Logo.scale-100.png"
-       height="150"
-       width="150"
-       alt="Lanscan logo" />
-</div>
+<?
+$title = 'Lanscan';
+$contentHtml = <<<END
 <h1>Lanscan</h1>
 <p>
   This is the home of Lanscan, a simple network scanning tool available in the Windows Store.
@@ -22,7 +11,6 @@
 <p>
   <a href="/privacy">Click on this link to read our privacy policy.</a>
 </p>
-<? require_once 'footer.php'; ?>
-</body>
-</html>
+END;
+require_once 'template.php';
 

@@ -1,17 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>Lanscan</title>
-  <link rel="stylesheet" href="/default.css">
-</head>
-<body>
-<div id="logo">
-  <img src="/static/Logo.scale-100.png"
-       height="150"
-       width="150"
-       alt="Lanscan logo" />
-</div>
+<?
+$title = 'Lanscan release notes';
+$contentHtml = <<<END
 <h1>Release notes</h1>
 <h2>Release 2 v1.2.0.3 (2013/1/25)</h2>
 <h3>Bug fixes</h3>
@@ -30,13 +19,13 @@
   <li>Changed selection mode of network map control to "none" since there is no point
   in allowing selection: click for port 80/443 is still supported</li>
   <li>Performs external IP address lookup using <a href="http://whatismyipaddress.com/">http://whatismyipaddress.com/</a>
-  and <a href="http://checkip.dyndns.org/"http://checkip.dyndns.org/"</a></li>
+  and <a href="http://checkip.dyndns.org/">http://checkip.dyndns.org/</a></li>
   <li>Added app bars and cleaned up UI</li>
 </ul>
 <h2>Release 1 (v1.1.0.2 (2013/1/18)</h2>
 <p>
   Initial release.
 </p>
-<? require_once 'footer.php'; ?>
-</body>
-</html>
+END;
+require_once 'template.php';
+
