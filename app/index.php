@@ -1,7 +1,6 @@
 <?
 $title = 'Lanscan';
 $contentHtml = <<<END
-<h1>Lanscan</h1>
 <p>
   This is the home of Lanscan, a simple network scanning tool available in the Windows Store.
 </p>

@@ -1,7 +1,6 @@
 <?
 $title = 'Lanscan release notes';
 $contentHtml = <<<END
-<h1>Release notes</h1>
 <h2>Release 2 v1.2.0.3 (2013/1/25)</h2>
 <h3>Bug fixes</h3>
 <ul>

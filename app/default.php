@@ -14,16 +14,10 @@ a {
 a:hover {
   color: #101010;
 }
-#logo {
+#nav {
   position: fixed;
   top: 10px;
   left: 10px;
-}
-#nav {
-  background-color: #EEEEEE;
-  padding: 5px;
-  text-transform: lowercase;
-  font-size: 80%;
 }
 #content {
   margin: 5px 5px 5px 120px;
