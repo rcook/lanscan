@@ -1,7 +1,7 @@
 <?
 $title = 'Lanscan release notes';
 $contentHtml = <<<END
-<h2>Release 2 v1.2.0.3 (2013/1/25)</h2>
+<h2>Upcoming release 2 (v1.2.0.3 2013/1/25)</h2>
 <h3>Bug fixes</h3>
 <ul>
   <li>CIDR/network prefix length now obtained from system network information instead
@@ -21,7 +21,7 @@ $contentHtml = <<<END
   and <a href="http://checkip.dyndns.org/">http://checkip.dyndns.org/</a></li>
   <li>Added app bars and cleaned up UI</li>
 </ul>
-<h2>Release 1 (v1.1.0.2 (2013/1/18)</h2>
+<h2>Release 1 (v1.1.0.2 2013/1/18)</h2>
 <p>
   Initial release.
 </p>
