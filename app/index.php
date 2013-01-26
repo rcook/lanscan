@@ -6,6 +6,12 @@
   <link rel="stylesheet" href="/default.css">
 </head>
 <body>
+<div id="logo">
+  <img src="/static/Logo.scale-100.png"
+       height="150"
+       width="150"
+       alt="Lanscan logo" />
+</div>
 <h1>Lanscan</h1>
 <p>
   This is the home of Lanscan, a simple network scanning tool available in the Windows Store.

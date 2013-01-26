@@ -1,7 +1,6 @@
 <? header('Content-Type: text/css'); ?>
 body {
   background-color: #0096FF;
-  background-image: url('/static/Logo.scale-100.png');
   color: #202020;
   font-family: Segoe UI Semibold;
   padding: 50px;
@@ -14,6 +13,10 @@ a {
 }
 a:hover {
   color: #101010;
+}
+#logo {
+  float: left;
+  height: 500px;
 }
 #nav {
   background-color: #EEEEEE;
