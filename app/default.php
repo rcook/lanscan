@@ -1,6 +1,7 @@
 <? header('Content-Type: text/css'); ?>
 body {
   background-color: #0096FF;
+  background-image: /static/Logo.scale-100.png
   color: #202020;
   font-family: Segoe UI Semibold;
   padding: 50px;
