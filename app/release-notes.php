@@ -23,7 +23,14 @@ $contentHtml = <<<END
 </ul>
 <h2>Release 1 (v1.1.0.2 2013/1/18)</h2>
 <p>
-  Initial release.
+  Lanscan is a simple network and network service discovery tool: it identifies your
+  computer's default IPv4 network and scans all hosts in the usable address range for
+  available TCP ports for a set of common network services such as port 22 (SSH), port
+  80 (HTTP), port 443 (HTTPS) etc. As it completes the scan, it produces a list of all
+  discovered end points in your local area network. HTTP/HTTPS end points can be
+  clicked which will point your default web browser at the web server in question.
+  Lanscan is a tool used to produce a simple map of the current user's local area
+  network.
 </p>
 END;
 require 'template.php';
