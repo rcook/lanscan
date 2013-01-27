@@ -4,6 +4,7 @@ $contentHtml = <<<END
 <h2>Upcoming release 2 (v1.2.0.3 2013/1/25)</h2>
 <h3>Bug fixes</h3>
 <ul>
+  <li>Switched on UDP port scanning!</li>
   <li>CIDR/network prefix length now obtained from system network information instead
   of trying to infer it from the device's IP address</li>
   <li>Removed individual endpoint trace during scan as it hobbled responsiveness of UI</li>
@@ -20,6 +21,7 @@ $contentHtml = <<<END
   <li>Performs external IP address lookup using <a href="http://whatismyipaddress.com/">http://whatismyipaddress.com/</a>
   and <a href="http://checkip.dyndns.org/">http://checkip.dyndns.org/</a></li>
   <li>Added app bars and cleaned up UI</li>
+  <li>Added protocol readout to network map</li>
 </ul>
 <h2>Release 1 (v1.1.0.2 2013/1/18)</h2>
 <p>
