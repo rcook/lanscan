@@ -1,7 +1,12 @@
 <?
 $title = 'Lanscan release notes';
 $contentHtml = <<<END
-<h2>Upcoming release 2 (v1.2.0.3 2013/1/25)</h2>
+<h2>Upcoming release 3 (v1.3.0.5)</h2>
+<h3>Bug fixes</h3>
+<ul>
+  <li>Display first DNS server address for networks with multiple DNS servers instead of erroring out</li>
+</ul>
+<h2>Release 2 (v1.3.0.4 2013/1/27)</h2>
 <h3>Bug fixes</h3>
 <ul>
   <li>Switched on UDP port scanning!</li>
