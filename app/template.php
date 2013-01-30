@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta charset="utf-8">
   <title><?= htmlspecialchars($title) ?></title>
   <link rel="stylesheet" href="/default.css">

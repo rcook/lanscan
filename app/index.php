@@ -2,7 +2,7 @@
 $title = 'Lanscan';
 $contentHtml = <<<END
 <p>
-  This is the home of Lanscan, a simple network scanning tool available in the Windows Store.
+  This is the home of Lanscan, a simple network scanning tool available in the Windows Store for Windows 8 and Windows RT.
 </p>
 <p>
   Features currently include:
