@@ -5,6 +5,26 @@ $contentHtml = <<<END
   This is the home of Lanscan, a simple network scanning tool available in the Windows Store.
 </p>
 <p>
+  Features currently include:
+</p>
+<ul>
+  <li>TCP and UDP port scanning</li>
+  <li>Scans a predefined list of commonly-used TCP and UDP ports</li>
+  <li>Provides a readout of essential networking information, including:
+    <ul>
+      <li>Local IPv4 address</li>
+      <li>Network mask and IPv4 address range for current network</li>
+      <li>DHCP information including gateway address, DNS server address and domain name</li>
+      <li>External IPv4 address</li>
+    </ul>
+  <li>Performs reverse DNS lookup of host domain name for each detected
+  IPv4 endpoint in the network</li>
+</ul>
+<p>
+  This project is being actively developed and more useful network diagnostic
+  information is planned for future releases.
+</p>
+<p>
   <a href="http://apps.microsoft.com/windows/app/lanscan/23324308-b07d-471b-b6d5-24ac9a0bb595">Click here to install this app from the Windows Store</a>
 </p>
 <p>
