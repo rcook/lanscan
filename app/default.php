@@ -3,7 +3,7 @@ body {
   background-color: #0096FF;
   color: #EEEEEE;
   font-family: Segoe UI Semibold;
-  padding: 50px;
+  padding: 10px 10px 10px 50px;
 }
 h1, h2 {
   font-family: Segoe UI Light, Arial, Verdana, sans-serif;
@@ -20,7 +20,7 @@ a:hover {
   left: 10px;
 }
 #content {
-  margin: 5px 5px 5px 120px;
+  margin: 0px 5px 5px 120px;
 }
 #footer {
   color: #202020;
