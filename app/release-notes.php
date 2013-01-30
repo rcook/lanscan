@@ -1,10 +1,11 @@
 <?
 $title = 'Lanscan release notes';
 $contentHtml = <<<END
-<h2>Upcoming release 3 (v1.3.0.5)</h2>
+<h2>Upcoming release 3 (v1.3.0.6, submitted 2013/1/29)</h2>
 <h3>Bug fixes</h3>
 <ul>
   <li>Display first DNS server address for networks with multiple DNS servers instead of erroring out</li>
+  <li>Tweaked theme colours to meet minimum accessibility requirements for colour contrast ratios</li>
 </ul>
 <h2>Release 2 (v1.3.0.4 2013/1/27)</h2>
 <h3>Bug fixes</h3>
