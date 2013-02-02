@@ -1,7 +1,20 @@
 <?
 $title = 'Lanscan release notes';
 $contentHtml = <<<END
-<h2>Upcoming release 3 (v1.3.0.6, submitted 2013/1/29)</h2>
+<h2>Release 4 (v1.4.0.8 2013/1/31)</h2>
+<h3>Bug fixes</h3>
+<ul>
+  <li>Fixed CIDR network address manipulation logic</li>
+  <li>Network address in IP range now correctly omitted from port scans</li>
+  <li>Fixed spike in memory usage when iterating over IP addresses in large subnet</li>
+</ul>
+<h3>New features</h3>
+<ul>
+  <li>Disabled item click in "network map" list view and instead added a "browse" button for
+  browsable network endpoints</li>
+  <li>Implemented simple embedded browser for browsable network endpoints</li>
+</ul>
+<h2>Release 3 (v1.3.0.6 2013/1/29)</h2>
 <h3>Bug fixes</h3>
 <ul>
   <li>Display first DNS server address for networks with multiple DNS servers instead of erroring out</li>
