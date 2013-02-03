@@ -1,6 +1,19 @@
 <?
 $title = 'Lanscan release notes';
 $contentHtml = <<<END
+<h2>Release 5 (v1.4.0.9 2013/2/3)</h2>
+<h3>Bug fixes</h3>
+<ul>
+  <li>Improved layout of network map when host names are long</li>
+  <li>Improved responsiveness of UI by batching updates to UI</li>
+  <li>Fixed DHCP "An error occurred" when no domain name is available via DHCP</li>
+  <li>Improved thread pool usage by batching ping requests</li>
+  <li>Finally got UDP pinging working properly (phew!)</li>
+</ul>
+<h3>Features</h3>
+<ul>
+  <li>Added network (including prefix length) to network information panel</li>
+</ul>
 <h2>Release 4 (v1.4.0.8 2013/1/31)</h2>
 <h3>Bug fixes</h3>
 <ul>
