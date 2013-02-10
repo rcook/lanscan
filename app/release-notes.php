@@ -1,6 +1,13 @@
 <?
 $title = 'Lanscan release notes';
 $contentHtml = <<<END
+<h2>Release 5 (v1.5.0.11 2013/2/10)</h2>
+<h3>Features</h3>
+<ul>
+  <li>Added IP address range selector to allow user to customize range
+  of scan: defaults to 255 addresses or usable address range, whichever
+  is smaller</li>
+</ul>
 <h2>Release 5 (v1.4.0.10 2013/2/3)</h2>
 <h3>Bug fixes</h3>
 <ul>
