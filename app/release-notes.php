@@ -1,7 +1,7 @@
 <?
 $title = 'Lanscan release notes';
 $contentHtml = <<<END
-<h2>Release 5 (v1.5.0.11 2013/2/10)</h2>
+<h2>Release 6 (v1.5.0.11 2013/2/10)</h2>
 <h3>Features</h3>
 <ul>
   <li>Added IP address range selector to allow user to customize range
