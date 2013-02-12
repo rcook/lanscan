@@ -1,7 +1,7 @@
 <?
 $title = 'Lanscan release notes';
 $contentHtml = <<<END
-<h2>Release 7 (v1.5.0.13, 2013/2/11)</h2>
+<h2>Release 7 (v1.5.0.14, 2013/2/11)</h2>
 <h3>Bug fixes</h3>
 <ul>
   <li>IP address selectors are now disabled when scan is in progress and re-enabled afterwards</li>
