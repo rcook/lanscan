@@ -1,14 +1,19 @@
 <?
 $title = 'Lanscan release notes';
 $contentHtml = <<<END
-<h2>Release 6 (v1.5.0.12 2013/2/10)</h2>
+<h2>Release 7 (v1.5.0.13, 2013/2/11)</h2>
+<h3>Bug fixes</h3>
+<ul>
+  <li>IP address selectors are now disabled when scan is in progress and re-enabled afterwards</li>
+</ul>
+<h2>Release 6 (v1.5.0.12, 2013/2/10)</h2>
 <h3>Features</h3>
 <ul>
   <li>Added IP address range selector to allow user to customize range of scan</li>
   <li>Popup menu provided to allow quick selection of whole network or first
   255 addresses where relevant</li>
 </ul>
-<h2>Release 5 (v1.4.0.10 2013/2/3)</h2>
+<h2>Release 5 (v1.4.0.10, 2013/2/3)</h2>
 <h3>Bug fixes</h3>
 <ul>
   <li>Improved layout of network map when host names are long</li>
@@ -20,7 +25,7 @@ $contentHtml = <<<END
 <ul>
   <li>Added network (including prefix length) to network information panel</li>
 </ul>
-<h2>Release 4 (v1.4.0.8 2013/1/31)</h2>
+<h2>Release 4 (v1.4.0.8, 2013/1/31)</h2>
 <h3>Bug fixes</h3>
 <ul>
   <li>Fixed CIDR network address manipulation logic</li>
@@ -33,13 +38,13 @@ $contentHtml = <<<END
   browsable network endpoints</li>
   <li>Implemented simple embedded browser for browsable network endpoints</li>
 </ul>
-<h2>Release 3 (v1.3.0.6 2013/1/29)</h2>
+<h2>Release 3 (v1.3.0.6, 2013/1/29)</h2>
 <h3>Bug fixes</h3>
 <ul>
   <li>Display first DNS server address for networks with multiple DNS servers instead of erroring out</li>
   <li>Tweaked theme colours to meet minimum accessibility requirements for colour contrast ratios</li>
 </ul>
-<h2>Release 2 (v1.3.0.4 2013/1/27)</h2>
+<h2>Release 2 (v1.3.0.4, 2013/1/27)</h2>
 <h3>Bug fixes</h3>
 <ul>
   <li>Switched on UDP port scanning!</li>
@@ -61,7 +66,7 @@ $contentHtml = <<<END
   <li>Added app bars and cleaned up UI</li>
   <li>Added protocol readout to network map</li>
 </ul>
-<h2>Release 1 (v1.1.0.2 2013/1/18)</h2>
+<h2>Release 1 (v1.1.0.2, 2013/1/18)</h2>
 <p>
   Lanscan is a simple network and network service discovery tool: it identifies your
   computer's default IPv4 network and scans all hosts in the usable address range for
