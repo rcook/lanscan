@@ -1,6 +1,17 @@
 <?
 $title = 'Lanscan release notes';
 $contentHtml = <<<END
+<h2>Release 8 (v1.6.0.15, 2013/2/?)</h2>
+<h3>Features</h3>
+<ul>
+  <li>Enhanced services UI allows user to enable and disable predefined services
+  as well as define own additional TCP or UDP ports to scan</li>
+  <li>Selected IP address range is now saved between app sessions</li>
+</ul>
+<h3>Bug fixes</h3>
+<ul>
+  <li>IP address of whole network is selected by default</li>
+</ul>
 <h2>Release 7 (v1.5.0.14, 2013/2/11)</h2>
 <h3>Bug fixes</h3>
 <ul>

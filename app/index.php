@@ -10,6 +10,7 @@ $contentHtml = <<<END
 <ul>
   <li>TCP and UDP port scanning</li>
   <li>Scans a predefined list of commonly-used TCP and UDP ports</li>
+  <li>Allows user to customized set of TCP and UDP ports to scan</li>
   <li>Provides a readout of essential networking information, including:
     <ul>
       <li>Local IPv4 address</li>
@@ -21,7 +22,7 @@ $contentHtml = <<<END
   IPv4 endpoint in the network</li>
 </ul>
 <p>
-  This project is being actively developed and more useful network diagnostic
+  This project is being actively developed and further useful network diagnostic
   information is planned for future releases.
 </p>
 <p>
