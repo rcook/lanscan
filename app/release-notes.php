@@ -1,7 +1,7 @@
 <?
 $title = 'Lanscan release notes';
 $contentHtml = <<<END
-<h2>Release 8 (v1.6.0.15, 2013/2/?)</h2>
+<h2>Release 8 (v1.6.0.15, 2013/2/26)</h2>
 <h3>Features</h3>
 <ul>
   <li>Enhanced services UI allows user to enable and disable predefined services
