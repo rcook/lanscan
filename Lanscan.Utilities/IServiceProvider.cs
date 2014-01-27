@@ -1,0 +1,14 @@
+﻿//////////////////////////////////////////////////////////////////////
+//
+// Lanscan
+// Copyright (C) 2013, Richard Cook. All rights reserved.
+//
+//////////////////////////////////////////////////////////////////////
+
+namespace Lanscan.Utilities
+{
+    public interface IServiceProvider
+    {
+        T GetService<T>() where T : class;
+    }
+}

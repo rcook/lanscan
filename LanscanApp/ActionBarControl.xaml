@@ -1,0 +1,142 @@
+﻿<UserControl x:Class="LanscanApp.ActionBarControl"
+             x:Name="_ActionBarControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:common="using:LanscanApp.Common"
+             xmlns:local="using:LanscanApp"
+             xmlns:ui="using:Lanscan.UI"
+             mc:Ignorable="d"
+             d:DesignHeight="300"
+             d:DesignWidth="400">
+    <UserControl.Resources>
+        <Style x:Key="ValidIPAddressBorderStyle"
+               TargetType="Border">
+            <Setter Property="BorderThickness"
+                    Value="5" />
+            <Setter Property="Margin"
+                    Value="2" />
+        </Style>
+        <Style x:Key="InvalidIPAddressBorderStyle"
+               TargetType="Border">
+            <Setter Property="BorderBrush"
+                    Value="Red" />
+            <Setter Property="BorderThickness"
+                    Value="5" />
+            <Setter Property="Margin"
+                    Value="2" />
+        </Style>
+
+        <common:BooleanToVisibilityConverter x:Key="booleanToVisibilityConverter" />
+        <common:InverseBooleanToVisibilityConverter x:Key="inverseBooleanToVisibilityConverter" />
+        <common:BooleanNegationConverter x:Key="booleanNegationConverter" />
+        <local:NullToVisibilityConverter x:Key="nullToVisibilityConverter" />
+        <ui:ConditionalConverter x:Key="ipAddressControlBorderStyleConverter"
+                                 TrueValue="{StaticResource ValidIPAddressBorderStyle}"
+                                 FalseValue="{StaticResource InvalidIPAddressBorderStyle}" />
+    </UserControl.Resources>
+
+    <Grid>
+        <Grid.Resources>
+            <Style TargetType="Button">
+                <Setter Property="Margin"
+                        Value="10" />
+                <Setter Property="MinWidth"
+                        Value="200" />
+                <Setter Property="MinHeight"
+                        Value="100" />
+            </Style>
+        </Grid.Resources>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0"
+              HorizontalAlignment="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <Grid.Resources>
+                <Style TargetType="TextBlock"
+                       BasedOn="{StaticResource BodyTextStyle}">
+                    <Setter Property="Margin"
+                            Value="5" />
+                    <Setter Property="HorizontalAlignment"
+                            Value="Center" />
+                </Style>
+                <Style TargetType="ui:IPAddressControl">
+                    <Setter Property="HorizontalAlignment"
+                            Value="Center" />
+                </Style>
+            </Grid.Resources>
+
+            <TextBlock x:Uid="ActionBarControl_StartAddressTextBlock"
+                       Grid.Row="0"
+                       Grid.Column="0"
+                       Text="[ActionBarControl_StartAddressTextBlock]" />
+            <ui:IPAddressControl Grid.Row="1"
+                                 Grid.Column="0"
+                                 AddressValue="{Binding StartAddressValue, ElementName=_ActionBarControl, Mode=TwoWay}"
+                                 BorderStyle="{Binding IsStartAddressValid, ElementName=_ActionBarControl, Converter={StaticResource ipAddressControlBorderStyleConverter}}"
+                                 IsEnabled="{Binding IsScanInProgress, ElementName=_ActionBarControl, Converter={StaticResource booleanNegationConverter}}" />
+            <TextBlock x:Uid="ActionBarControl_EndAddressTextBlock"
+                       Grid.Row="2"
+                       Grid.Column="0"
+                       Text="[ActionBarControl_EndAddressTextBlock]" />
+            <ui:IPAddressControl Grid.Row="3"
+                                 Grid.Column="0"
+                                 AddressValue="{Binding EndAddressValue, ElementName=_ActionBarControl, Mode=TwoWay}"
+                                 BorderStyle="{Binding IsEndAddressValid, ElementName=_ActionBarControl, Converter={StaticResource ipAddressControlBorderStyleConverter}}"
+                                 IsEnabled="{Binding IsScanInProgress, ElementName=_ActionBarControl, Converter={StaticResource booleanNegationConverter}}" />
+            <TextBlock x:Uid="ActionBarControl_ValidAddressValuesTextBlock"
+                       Grid.Row="4"
+                       Grid.Column="0"
+                       Grid.ColumnSpan="2"
+                       Text="[ActionBarControl_ValidAddressValuesTextBlock]"
+                       Visibility="{Binding IsValidAddressRange, ElementName=_ActionBarControl, Converter={StaticResource booleanToVisibilityConverter}}" />
+            <TextBlock x:Uid="ActionBarControl_InvalidAddressValuesTextBlock"
+                       Grid.Row="4"
+                       Grid.Column="0"
+                       Grid.ColumnSpan="2"
+                       Text="[ActionBarControl_InvalidAddressValuesTextBlock]"
+                       Foreground="Yellow"
+                       Visibility="{Binding IsValidAddressRange, ElementName=_ActionBarControl, Converter={StaticResource inverseBooleanToVisibilityConverter}}" />
+            <Button Grid.Row="0"
+                    Grid.RowSpan="4"
+                    Grid.Column="1"
+                    Style="{StaticResource PopupMenuButtonStyle}"
+                    Content="&#xE011;"
+                    Click="SelectionButton_Click"
+                    IsEnabled="{Binding IsScanInProgress, ElementName=_ActionBarControl, Converter={StaticResource booleanNegationConverter}}"
+                    Visibility="{Binding CustomSelectionCommands, ElementName=_ActionBarControl, Converter={StaticResource nullToVisibilityConverter}}" />
+        </Grid>
+
+        <StackPanel Grid.Row="1"
+                    Orientation="Horizontal">
+            <Button x:Uid="ActionBarControl_ScanButton"
+                    Content="[ActionBarControl_ScanButton]"
+                    Command="{Binding ScanCommand, ElementName=_ActionBarControl}" />
+            <Button x:Uid="ActionBarControl_CancelScanButton"
+                    Content="[ActionBarControl_CancelScanButton]"
+                    Command="{Binding CancelScanCommand, ElementName=_ActionBarControl}" />
+            <!--
+            <Button Content="SynchronizationContextUnhandledException"
+                    Click="SynchronizationContextUnhandledExceptionButton_Click" />
+            <Button Content="OtherUnhandledException"
+                    Click="OtherUnhandledExceptionButton_Click" />
+            <Button Content="AppUnhandledException"
+                    Click="AppUnhandledExceptionButton_Click" />
+            -->
+        </StackPanel>
+    </Grid>
+</UserControl>

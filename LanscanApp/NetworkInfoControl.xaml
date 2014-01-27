@@ -1,0 +1,127 @@
+﻿<UserControl x:Class="LanscanApp.NetworkInfoControl"
+             x:Name="_NetworkInfoControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="using:LanscanApp"
+             mc:Ignorable="d"
+             d:DesignHeight="300"
+             d:DesignWidth="400">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+        <Grid.Resources>
+            <Style TargetType="TextBlock"
+                   BasedOn="{StaticResource BodyTextStyle}">
+                <Setter Property="Margin"
+                        Value="2" />
+            </Style>
+        </Grid.Resources>
+
+        <TextBlock x:Uid="NetworkInfoControl_AddressTextBlock"
+                   Text="[NetworkInfoControl_AddressTextBlock]"
+                   Grid.Row="0"
+                   Grid.Column="0" />
+        <local:AsyncTextBlockControl Grid.Row="0"
+                                     Grid.Column="1"
+                                     Text="{Binding ConnectionInfo.Address, ElementName=_NetworkInfoControl}"
+                                     TaskStatus="{Binding ConnectionInfoTaskStatus, ElementName=_NetworkInfoControl}" />
+
+        <TextBlock x:Uid="NetworkInfoControl_NetworkTextBlock"
+                   Text="[NetworkInfoControl_NetworkTextBlock]"
+                   Grid.Row="1"
+                   Grid.Column="0" />
+        <local:AsyncTextBlockControl Grid.Row="1"
+                                     Grid.Column="1"
+                                     Text="{Binding ConnectionInfo.Network, ElementName=_NetworkInfoControl}"
+                                     TaskStatus="{Binding ConnectionInfoTaskStatus, ElementName=_NetworkInfoControl}" />
+
+        <TextBlock x:Uid="NetworkInfoControl_NetworkMaskTextBlock"
+                   Text="[NetworkInfoControl_NetworkMaskTextBlock]"
+                   Grid.Row="2"
+                   Grid.Column="0" />
+        <local:AsyncTextBlockControl Grid.Row="2"
+                                     Grid.Column="1"
+                                     Text="{Binding ConnectionInfo.Network.NetworkMask, ElementName=_NetworkInfoControl}"
+                                     TaskStatus="{Binding ConnectionInfoTaskStatus, ElementName=_NetworkInfoControl}" />
+
+        <TextBlock x:Uid="NetworkInfoControl_FirstUsableAddressTextBlock"
+                   Text="[NetworkInfoControl_FirstUsableAddressTextBlock]"
+                   Grid.Row="3"
+                   Grid.Column="0" />
+        <local:AsyncTextBlockControl Grid.Row="3"
+                                     Grid.Column="1"
+                                     Text="{Binding ConnectionInfo.Network.FirstUsableAddress, ElementName=_NetworkInfoControl}"
+                                     TaskStatus="{Binding ConnectionInfoTaskStatus, ElementName=_NetworkInfoControl}" />
+
+        <TextBlock x:Uid="NetworkInfoControl_LastUsableAddressTextBlock"
+                   Text="[NetworkInfoControl_LastUsableAddressTextBlock]"
+                   Grid.Row="4"
+                   Grid.Column="0" />
+        <local:AsyncTextBlockControl Grid.Row="4"
+                                     Grid.Column="1"
+                                     Text="{Binding ConnectionInfo.Network.LastUsableAddress, ElementName=_NetworkInfoControl}"
+                                     TaskStatus="{Binding ConnectionInfoTaskStatus, ElementName=_NetworkInfoControl}" />
+
+
+        <TextBlock x:Uid="NetworkInfoControl_UsableAddressCountTextBlock"
+                   Text="[NetworkInfoControl_UsableAddressCountTextBlock]"
+                   Grid.Row="5"
+                   Grid.Column="0" />
+        <local:AsyncTextBlockControl Grid.Row="5"
+                                     Grid.Column="1"
+                                     Text="{Binding ConnectionInfo.Network.UsableAddresses.Count, ElementName=_NetworkInfoControl}"
+                                     TaskStatus="{Binding ConnectionInfoTaskStatus, ElementName=_NetworkInfoControl}" />
+
+        <TextBlock x:Uid="NetworkInfoControl_GatewayAddressTextBlock"
+                   Text="[NetworkInfoControl_GatewayAddressTextBlock]"
+                   Grid.Row="6"
+                   Grid.Column="0" />
+        <local:AsyncTextBlockControl Grid.Row="6"
+                                     Grid.Column="1"
+                                     Text="{Binding DhcpInfo.GatewayAddress, ElementName=_NetworkInfoControl}"
+                                     TaskStatus="{Binding DhcpInfoTaskStatus, ElementName=_NetworkInfoControl}" />
+
+        <TextBlock x:Uid="NetworkInfoControl_DnsServerAddressTextBlock"
+                   Text="[NetworkInfoControl_DnsServerAddressTextBlock]"
+                   Grid.Row="7"
+                   Grid.Column="0" />
+        <local:AsyncTextBlockControl Grid.Row="7"
+                                     Grid.Column="1"
+                                     Text="{Binding DhcpInfo.DnsServerAddress, ElementName=_NetworkInfoControl}"
+                                     TaskStatus="{Binding DhcpInfoTaskStatus, ElementName=_NetworkInfoControl}" />
+
+        <TextBlock x:Uid="NetworkInfoControl_DomainNameTextBlock"
+                   Text="[NetworkInfoControl_DomainNameTextBlock]"
+                   Grid.Row="8"
+                   Grid.Column="0" />
+        <local:AsyncTextBlockControl Grid.Row="8"
+                                     Grid.Column="1"
+                                     Text="{Binding DhcpInfo.DomainName, ElementName=_NetworkInfoControl}"
+                                     TaskStatus="{Binding DhcpInfoTaskStatus, ElementName=_NetworkInfoControl}" />
+
+        <TextBlock x:Uid="NetworkInfoControl_ExternalAddressTextBlock"
+                   Text="[NetworkInfoControl_ExternalAddressTextBlock]"
+                   Grid.Row="9"
+                   Grid.Column="0" />
+        <local:AsyncTextBlockControl Grid.Row="9"
+                                     Grid.Column="1"
+                                     Text="{Binding ExternalAddress, ElementName=_NetworkInfoControl}"
+                                     TaskStatus="{Binding ExternalAddressTaskStatus, ElementName=_NetworkInfoControl}" />
+    </Grid>
+</UserControl>

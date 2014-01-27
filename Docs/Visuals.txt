@@ -1,0 +1,11 @@
+SPLASH SCREEN COLOURS
+
+ForegroundColour: #FFEEEEEE
+BackgroundColour: #FF0096FF
+
+THEME COLOURS
+
+ThemeForegroundColour: #FFFFFFFF
+ThemeBackgroundColour: #FF004B80
+ThemeHighlightForegroundColour: #FF000000
+ThemeHighlightBackgroundColour: #FFADD8E6

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>WinRtBehaviors</id>
+    <version>1.0.2</version>
+    <authors>Joost van Schaik,  Geert van Horrik,  Filip Skakun,  András Velvárt</authors>
+    <owners>Joost van Schaik,  Geert van Horrik,  Filip Skakun,  András Velvárt</owners>
+    <licenseUrl>http://winrtbehaviors.codeplex.com/license</licenseUrl>
+    <projectUrl>http://winrtbehaviors.codeplex.com/</projectUrl>
+    <iconUrl>http://www.schaikweb.net/miscimages/winrtbehaviors.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>WinRT XAML does not support behaviors out of the box. This library tries to fill the gap for people who really need behaviors to get cracking in XAML for Windows 8 apps.
+    Version 1.0.2 adds a bit of Blend support</description>
+    <language>en-US</language>
+    <references>
+      <reference file="WinRtBehaviors.dll" />
+    </references>
+  </metadata>
+</package>

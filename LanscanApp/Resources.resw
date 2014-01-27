@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ActionBarControl_CancelScanButton.Content" xml:space="preserve">
+    <value>Cancel scan</value>
+  </data>
+  <data name="ActionBarControl_EndAddressTextBlock.Text" xml:space="preserve">
+    <value>Scan end address</value>
+  </data>
+  <data name="ActionBarControl_InvalidAddressValuesTextBlock.Text" xml:space="preserve">
+    <value>Selection invalid or outside range of network</value>
+  </data>
+  <data name="ActionBarControl_ScanButton.Content" xml:space="preserve">
+    <value>Scan</value>
+  </data>
+  <data name="ActionBarControl_ShowServicesButton.Content" xml:space="preserve">
+    <value>Show services</value>
+  </data>
+  <data name="ActionBarControl_StartAddressTextBlock.Text" xml:space="preserve">
+    <value>Scan start address</value>
+  </data>
+  <data name="ActionBarControl_ValidAddressValuesTextBlock.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AddUserServiceControl_AddButton.Content" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="AddUserServiceControl_NameTextBlock.Text" xml:space="preserve">
+    <value>Name:</value>
+  </data>
+  <data name="AddUserServiceControl_PortTextBlock.Text" xml:space="preserve">
+    <value>Port:</value>
+  </data>
+  <data name="AddUserServiceControl_ProtocolTextBlock.Text" xml:space="preserve">
+    <value>Protocol:</value>
+  </data>
+  <data name="AsyncTextBlockControl_FaultTextBlock.Text" xml:space="preserve">
+    <value>An error occurred</value>
+  </data>
+  <data name="BrowserPage_BackButton.Content" xml:space="preserve">
+    <value>back</value>
+  </data>
+  <data name="BrowserPage_TitleTextBlock.Text" xml:space="preserve">
+    <value>Browser</value>
+  </data>
+  <data name="BrowserPage_WatermarkTextBlock.Text" xml:space="preserve">
+    <value>The specified URL could not be loaded.</value>
+  </data>
+  <data name="MainPage_TitleTextBlock.Text" xml:space="preserve">
+    <value>Lanscan</value>
+  </data>
+  <data name="NetworkInfoControl_AddressTextBlock.Text" xml:space="preserve">
+    <value>Address:</value>
+  </data>
+  <data name="NetworkInfoControl_DnsServerAddressTextBlock.Text" xml:space="preserve">
+    <value>DNS server address:</value>
+  </data>
+  <data name="NetworkInfoControl_DomainNameTextBlock.Text" xml:space="preserve">
+    <value>Domain name:</value>
+  </data>
+  <data name="NetworkInfoControl_ExternalAddressTextBlock.Text" xml:space="preserve">
+    <value>External address:</value>
+  </data>
+  <data name="NetworkInfoControl_FirstUsableAddressTextBlock.Text" xml:space="preserve">
+    <value>First usable address:</value>
+  </data>
+  <data name="NetworkInfoControl_GatewayAddressTextBlock.Text" xml:space="preserve">
+    <value>Gateway address:</value>
+  </data>
+  <data name="NetworkInfoControl_LastUsableAddressTextBlock.Text" xml:space="preserve">
+    <value>Last usable address:</value>
+  </data>
+  <data name="NetworkInfoControl_NetworkMaskTextBlock.Text" xml:space="preserve">
+    <value>Network mask:</value>
+  </data>
+  <data name="NetworkInfoControl_NetworkTextBlock.Text" xml:space="preserve">
+    <value>Network:</value>
+  </data>
+  <data name="NetworkInfoControl_UsableAddressCountTextBlock.Text" xml:space="preserve">
+    <value>Usable addresses:</value>
+  </data>
+  <data name="NetworkMapControl_LaunchUriButton.Content" xml:space="preserve">
+    <value>browse</value>
+  </data>
+  <data name="NetworkMapControl_TitleTextBlock.Text" xml:space="preserve">
+    <value>Network map</value>
+  </data>
+  <data name="NetworkServicesPage_PredefinedNetworkServicesTitleTextBlock.Text" xml:space="preserve">
+    <value>Predefined network services</value>
+  </data>
+  <data name="NetworkServicesPage_TitleTextBlock.Text" xml:space="preserve">
+    <value>Network services</value>
+  </data>
+  <data name="NetworkServicesPage_UserNetworkServicesTitleTextBlock.Text" xml:space="preserve">
+    <value>User network services</value>
+  </data>
+  <data name="Strings_ActionBarControl_SelectFirstNUsableAddressesFormat" xml:space="preserve">
+    <value>select first {0} usable addresses</value>
+  </data>
+  <data name="Strings_ActionBarControl_SelectWholeNetwork" xml:space="preserve">
+    <value>select whole network</value>
+  </data>
+  <data name="Strings_ProtocolToStringConverter_Tcp" xml:space="preserve">
+    <value>TCP</value>
+  </data>
+  <data name="Strings_ProtocolToStringConverter_Udp" xml:space="preserve">
+    <value>UDP</value>
+  </data>
+  <data name="Strings_Status_GetConnectionInfoFailed" xml:space="preserve">
+    <value>Could not obtain IPv4 connection information.</value>
+  </data>
+  <data name="Strings_Status_GetDhcpInfoFailed" xml:space="preserve">
+    <value>Could not obtain DHCP information for current connection.</value>
+  </data>
+  <data name="Strings_Status_GetExternalAddressFailed" xml:space="preserve">
+    <value>Could not determine external IP address for current connection.</value>
+  </data>
+  <data name="Strings_Status_GetHostInfoFailed" xml:space="preserve">
+    <value>Could not obtain IPv4 network information for this device.</value>
+  </data>
+  <data name="Strings_Status_ScanCancelled" xml:space="preserve">
+    <value>Scan cancelled.</value>
+  </data>
+  <data name="Strings_Status_ScanCompletedFormat" xml:space="preserve">
+    <value>Scan completed in {0}.</value>
+  </data>
+  <data name="Strings_Status_ScanStarted" xml:space="preserve">
+    <value>Scan started.</value>
+  </data>
+</root>

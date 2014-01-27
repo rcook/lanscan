@@ -1,0 +1,14 @@
+KNOWN BUGS
+
+* Scrolling of main "network map" list view doesn't work on all devices
+* DnsResolverBase caching of host entry information doesn't appear to work due to TTL implementation
+  * Remove current workaround
+
+MORE THOUGHTS
+
+* Add explanation to "services" page
+* Save network scan information
+* How should I deal with unhandled exceptions thrown within tasks?
+* Implement CollectionViewSource stuff
+* Improve performance of SaveState for main page
+* Adopt string resource string class generator

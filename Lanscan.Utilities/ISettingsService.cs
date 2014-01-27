@@ -1,0 +1,14 @@
+﻿//////////////////////////////////////////////////////////////////////
+//
+// Lanscan
+// Copyright (C) 2013, Richard Cook. All rights reserved.
+//
+//////////////////////////////////////////////////////////////////////
+
+namespace Lanscan.Utilities
+{
+    public interface ISettingsService
+    {
+        IPropertyStore SettingsPropertyStore { get; }
+    }
+}

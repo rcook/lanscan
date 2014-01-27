@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C7488725-AE47-4633-BA73-0481199E72CF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Lanscan.Networking.Dns</RootNamespace>
+    <AssemblyName>Lanscan.Networking.Dns</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BC8A1FFA-BEE3-4634-8014-F334798102B3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <ProjectReference Include="..\Lanscan.Networking\Lanscan.Networking.csproj">
+      <Project>{45b368d0-bf21-467c-948e-796259844a3c}</Project>
+      <Name>Lanscan.Networking</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Records\RecordType.cs" />
+    <Compile Include="DnsHelper.cs" />
+    <Compile Include="DnsResolverBase.cs" />
+    <Compile Include="DnsResolverOptions.cs" />
+    <Compile Include="Header.cs" />
+    <Compile Include="IDatagramSocket.cs" />
+    <Compile Include="IDatagramSocketFactory.cs" />
+    <Compile Include="IStreamSocket.cs" />
+    <Compile Include="IStreamSocketFactory.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Question.cs" />
+    <Compile Include="RecordReader.cs" />
+    <Compile Include="Records\Constants.cs" />
+    <Compile Include="Records\Record.cs" />
+    <Compile Include="Records\ARecord.cs" />
+    <Compile Include="Records\A6Record.cs" />
+    <Compile Include="Records\AAAARecord.cs" />
+    <Compile Include="Records\AFSDBRecord.cs" />
+    <Compile Include="Records\APLRecord.cs" />
+    <Compile Include="Records\ATMARecord.cs" />
+    <Compile Include="Records\CERTRecord.cs" />
+    <Compile Include="Records\CNAMERecord.cs" />
+    <Compile Include="Records\DHCIDRecord.cs" />
+    <Compile Include="Records\DNAMERecord.cs" />
+    <Compile Include="Records\DNSKEYRecord.cs" />
+    <Compile Include="Records\DSRecord.cs" />
+    <Compile Include="Records\EIDRecord.cs" />
+    <Compile Include="Records\GIDRecord.cs" />
+    <Compile Include="Records\GPOSRecord.cs" />
+    <Compile Include="Records\HINFORecord.cs" />
+    <Compile Include="Records\HIPRecord.cs" />
+    <Compile Include="Records\IPSECKEYRecord.cs" />
+    <Compile Include="Records\ISDNRecord.cs" />
+    <Compile Include="Records\KEYRecord.cs" />
+    <Compile Include="Records\KXRecord.cs" />
+    <Compile Include="Records\LOCRecord.cs" />
+    <Compile Include="Records\MBRecord.cs" />
+    <Compile Include="Records\MDRecord.cs" />
+    <Compile Include="Records\MFRecord.cs" />
+    <Compile Include="Records\MGRecord.cs" />
+    <Compile Include="Records\MINFORecord.cs" />
+    <Compile Include="Records\MRRecord.cs" />
+    <Compile Include="Records\MXRecord.cs" />
+    <Compile Include="Records\NAPTRRecord.cs" />
+    <Compile Include="Records\NIMLOCRecord.cs" />
+    <Compile Include="Records\NSRecord.cs" />
+    <Compile Include="Records\NSAPRecord.cs" />
+    <Compile Include="Records\NSAPPTRRecord.cs" />
+    <Compile Include="Records\NSECRecord.cs" />
+    <Compile Include="Records\NSEC3Record.cs" />
+    <Compile Include="Records\NSEC3PARAMRecord.cs" />
+    <Compile Include="Records\NULLRecord.cs" />
+    <Compile Include="Records\NXTRecord.cs" />
+    <Compile Include="Records\OPTRecord.cs" />
+    <Compile Include="Records\PTRRecord.cs" />
+    <Compile Include="Records\PXRecord.cs" />
+    <Compile Include="Records\RPRecord.cs" />
+    <Compile Include="Records\RRSIGRecord.cs" />
+    <Compile Include="Records\RTRecord.cs" />
+    <Compile Include="Records\SIGRecord.cs" />
+    <Compile Include="Records\SINKRecord.cs" />
+    <Compile Include="Records\SOARecord.cs" />
+    <Compile Include="Records\SPFRecord.cs" />
+    <Compile Include="Records\SRVRecord.cs" />
+    <Compile Include="Records\SSHFPRecord.cs" />
+    <Compile Include="Records\TKEYRecord.cs" />
+    <Compile Include="Records\TSIGRecord.cs" />
+    <Compile Include="Records\TXTRecord.cs" />
+    <Compile Include="Records\UIDRecord.cs" />
+    <Compile Include="Records\UINFORecord.cs" />
+    <Compile Include="Records\UnknownRecord.cs" />
+    <Compile Include="Records\UNSPECRecord.cs" />
+    <Compile Include="Records\WKSRecord.cs" />
+    <Compile Include="Records\X25Record.cs" />
+    <Compile Include="Request.cs" />
+    <Compile Include="Response.cs" />
+    <Compile Include="RR.cs" />
+    <Compile Include="Structs.cs" />
+    <Compile Include="TcpDnsResolver.cs" />
+    <Compile Include="UdpDnsResolver.cs" />
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0' ">
+    <VisualStudioVersion>11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

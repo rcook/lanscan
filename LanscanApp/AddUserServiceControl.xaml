@@ -1,0 +1,116 @@
+﻿<UserControl x:Class="LanscanApp.AddUserServiceControl"
+             x:Name="_AddUserServiceControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="using:LanscanApp"
+             xmlns:ui="using:Lanscan.UI"
+             mc:Ignorable="d"
+             d:DesignHeight="300"
+             d:DesignWidth="500"
+             Background="Silver">
+    <UserControl.Resources>
+        <local:ProtocolToStringConverter x:Key="protocolToStringConverter" />
+        <ui:BooleanToOpacityConverter x:Key="booleanToOpacityConverter" />
+
+        <Style TargetType="TextBlock"
+               BasedOn="{StaticResource BodyTextStyle}">
+            <Setter Property="Foreground"
+                    Value="Black" />
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="Margin"
+                    Value="5" />
+        </Style>
+        <Style TargetType="ComboBox">
+            <Setter Property="Margin"
+                    Value="5" />
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="Foreground"
+                    Value="Black" />
+            <Setter Property="BorderBrush"
+                    Value="Black" />
+            <Setter Property="Padding"
+                    Value="20,5,20,5" />
+            <Setter Property="HorizontalAlignment"
+                    Value="Center" />
+        </Style>
+        <Style x:Key="InvalidTextBlockStyle"
+               TargetType="TextBlock"
+               BasedOn="{StaticResource BodyTextStyle}">
+            <Setter Property="Foreground"
+                    Value="Red" />
+            <Setter Property="FontWeight"
+                    Value="Bold" />
+            <Setter Property="FontFamily"
+                    Value="Segoe UI Symbol" />
+        </Style>
+    </UserControl.Resources>
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+
+        <TextBlock x:Uid="AddUserServiceControl_NameTextBlock"
+                   Grid.Row="0"
+                   Grid.Column="0"
+                   Text="[AddUserServiceControl_NameTextBlock]"/>
+        <TextBox Grid.Row="0"
+                 Grid.Column="1"
+                 Width="300"
+                 TextChanged="NameTextBox_TextChanged" />
+        <TextBlock Grid.Row="0"
+                   Grid.Column="2"
+                   Text="&#xE171;"
+                   Style="{StaticResource InvalidTextBlockStyle}"
+                   Opacity="{Binding IsSelectedNameInvalid, ElementName=_AddUserServiceControl, Converter={StaticResource booleanToOpacityConverter}}" />
+
+        <TextBlock x:Uid="AddUserServiceControl_ProtocolTextBlock"
+                   Grid.Row="1"
+                   Grid.Column="0"
+                   Text="[AddUserServiceControl_ProtocolTextBlock]"/>
+        <ComboBox Grid.Row="1"
+                  Grid.Column="1"
+                  ItemsSource="{Binding AvailableProtocols, ElementName=_AddUserServiceControl}"
+                  SelectedItem="{Binding SelectedProtocol, ElementName=_AddUserServiceControl, Mode=TwoWay}">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Converter={StaticResource protocolToStringConverter}}" />
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+
+        <TextBlock x:Uid="AddUserServiceControl_PortTextBlock"
+                   Grid.Row="2"
+                   Grid.Column="0"
+                   Text="[AddUserServiceControl_PortTextBlock]"/>
+        <TextBox Grid.Row="2"
+                 Grid.Column="1"
+                 Width="300"
+                 TextChanged="PortTextBox_TextChanged" />
+        <TextBlock Grid.Row="2"
+                   Grid.Column="2"
+                   Text="&#xE171;"
+                   Style="{StaticResource InvalidTextBlockStyle}"
+                   Opacity="{Binding IsSelectedPortInvalid, ElementName=_AddUserServiceControl, Converter={StaticResource booleanToOpacityConverter}}" />
+
+        <Button x:Uid="AddUserServiceControl_AddButton"
+                Grid.Row="3"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"
+                Content="[AddUserServiceControl_AddButton]"
+                IsEnabled="{Binding IsComplete, ElementName=_AddUserServiceControl}"
+                Click="AddButton_Click"/>
+    </Grid>
+</UserControl>

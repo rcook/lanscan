@@ -1,0 +1,177 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="StandardStyles.xaml" />
+        <ResourceDictionary Source="Brushes.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+
+    <Style TargetType="AppBar">
+        <Setter Property="Padding"
+                Value="10,0,10,0" />
+    </Style>
+
+    <Style x:Key="ThemeTextStyle"
+           TargetType="TextBlock"
+           BasedOn="{StaticResource BasicTextStyle}">
+        <Setter Property="Foreground"
+                Value="{StaticResource ThemeForegroundBrush}" />
+    </Style>
+
+    <Style x:Key="HeaderTextStyle"
+           TargetType="TextBlock"
+           BasedOn="{StaticResource ThemeTextStyle}">
+        <Setter Property="FontSize"
+                Value="20" />
+        <Setter Property="FontWeight"
+                Value="Light" />
+        <Setter Property="Margin"
+                Value="10" />
+    </Style>
+
+    <Style x:Key="BodyTextStyle"
+           TargetType="TextBlock"
+           BasedOn="{StaticResource ThemeTextStyle}">
+        <Setter Property="FontSize"
+                Value="16" />
+        <Setter Property="FontWeight"
+                Value="Medium" />
+        <Setter Property="Margin"
+                Value="10" />
+    </Style>
+
+    <!-- Based on RefreshAppBarButtonStyle -->
+    <Style x:Key="ScanAppBarButtonStyle"
+           TargetType="ButtonBase"
+           BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId"
+                Value="ScanAppBarButton" />
+        <Setter Property="AutomationProperties.Name"
+                Value="Scan" />
+        <Setter Property="Content"
+                Value="&#xE117;" />
+    </Style>
+
+    <!-- Based on StopAppBarButtonStyle -->
+    <Style x:Key="CancelScanAppBarButtonStyle"
+           TargetType="ButtonBase"
+           BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId"
+                Value="CancelScanAppBarButton" />
+        <Setter Property="AutomationProperties.Name"
+                Value="Cancel" />
+        <Setter Property="Content"
+                Value="&#xE15B;" />
+    </Style>
+
+    <!-- Based on ListAppBarButtonStyle -->
+    <Style x:Key="ShowServicesAppBarButtonStyle"
+           TargetType="ButtonBase"
+           BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId"
+                Value="ShowServicesAppBarButton" />
+        <Setter Property="AutomationProperties.Name"
+                Value="Services" />
+        <Setter Property="Content"
+                Value="&#xE14C;" />
+    </Style>
+
+    <!-- Based on HomeAppBarButtonStyle -->
+    <Style x:Key="HomeAppBarButtonStyle"
+           TargetType="ButtonBase"
+           BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId"
+                Value="HomeAppBarButton" />
+        <Setter Property="AutomationProperties.Name"
+                Value="Home" />
+        <Setter Property="Content"
+                Value="&#xE10F;" />
+    </Style>
+
+    <!-- Based on AddAppBarButtonStyle -->
+    <Style x:Key="AddAppBarButtonStyle"
+           TargetType="ButtonBase"
+           BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId"
+                Value="AddAppBarButton" />
+        <Setter Property="AutomationProperties.Name"
+                Value="Add" />
+        <Setter Property="Content"
+                Value="&#xE109;" />
+    </Style>
+
+    <!-- Based on RemoveAppBarButtonStyle -->
+    <Style x:Key="RemoveAppBarButtonStyle"
+           TargetType="ButtonBase"
+           BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId"
+                Value="RemoveAppBarButton" />
+        <Setter Property="AutomationProperties.Name"
+                Value="Remove" />
+        <Setter Property="Content"
+                Value="&#xE108;" />
+    </Style>
+
+    <Style x:Key="PopupMenuButtonStyle"
+           TargetType="Button">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <TextBlock x:Name="ChevronGlyph"
+                                   Text="&#xE011;"
+                                   FontFamily="Segoe UI Symbol"
+                                   FontSize="24"
+                                   FontWeight="Bold"
+                                   Margin="2,3,0,0" />
+                        <TextBlock x:Name="OutlineGlyph"
+                                   Text="&#xE0A7;"
+                                   FontFamily="Segoe UI Symbol"
+                                   FontSize="32"
+                                   FontWeight="Bold" />
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup>
+                                <VisualState x:Name="Normal" />
+                                <VisualState x:Name="PointerOver">
+                                    <Storyboard>
+                                        <DoubleAnimation Storyboard.TargetName="ChevronGlyph"
+                                                         Storyboard.TargetProperty="Opacity"
+                                                         To="0.5"
+                                                         Duration="0" />
+                                        <DoubleAnimation Storyboard.TargetName="OutlineGlyph"
+                                                         Storyboard.TargetProperty="Opacity"
+                                                         To="0.5"
+                                                         Duration="0" />
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="Pressed">
+                                    <Storyboard>
+                                        <DoubleAnimation Storyboard.TargetName="ChevronGlyph"
+                                                         Storyboard.TargetProperty="Opacity"
+                                                         To="0.25"
+                                                         Duration="0" />
+                                        <DoubleAnimation Storyboard.TargetName="OutlineGlyph"
+                                                         Storyboard.TargetProperty="Opacity"
+                                                         To="0.25"
+                                                         Duration="0" />
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="Disabled">
+                                    <Storyboard>
+                                        <DoubleAnimation Storyboard.TargetName="ChevronGlyph"
+                                                         Storyboard.TargetProperty="Opacity"
+                                                         To="0.5"
+                                                         Duration="0" />
+                                        <DoubleAnimation Storyboard.TargetName="OutlineGlyph"
+                                                         Storyboard.TargetProperty="Opacity"
+                                                         To="0.5"
+                                                         Duration="0" />
+                                    </Storyboard>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
