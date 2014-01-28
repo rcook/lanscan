@@ -60,7 +60,7 @@ $contentHtml = <<<END
 <ul>
   <li>Switched on UDP port scanning!</li>
   <li>CIDR/network prefix length now obtained from system network information instead
-  of trying to infer it from the device's IP address</li>
+  of trying to infer it from the device&rsquo;s IP address</li>
   <li>Removed individual endpoint trace during scan as it hobbled responsiveness of UI</li>
   <li>Fixed cancellation behaviour</li>
 </ul>
@@ -80,12 +80,12 @@ $contentHtml = <<<END
 <h2>Release 1 (v1.1.0.2, 2013/1/18)</h2>
 <p>
   Lanscan is a simple network and network service discovery tool: it identifies your
-  computer's default IPv4 network and scans all hosts in the usable address range for
+  computer&rsquo;s default IPv4 network and scans all hosts in the usable address range for
   available TCP ports for a set of common network services such as port 22 (SSH), port
   80 (HTTP), port 443 (HTTPS) etc. As it completes the scan, it produces a list of all
   discovered end points in your local area network. HTTP/HTTPS end points can be
   clicked which will point your default web browser at the web server in question.
-  Lanscan is a tool used to produce a simple map of the current user's local area
+  Lanscan is a tool used to produce a simple map of the current user&rsquo;s local area
   network.
 </p>
 END;
