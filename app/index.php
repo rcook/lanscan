@@ -2,7 +2,7 @@
 $title = 'Lanscan';
 $contentHtml = <<<END
 <p>
-  This is the home of Lanscan, a simple network scanning tool available in the Windows Store for Windows 8 and Windows RT.
+  This is the home of Lanscan, a simple network scanning tool available in the Windows Store for Windows 8, Windows 8.1 and Windows RT.
 </p>
 <p>
   Features currently include:
@@ -10,7 +10,7 @@ $contentHtml = <<<END
 <ul>
   <li>TCP and UDP port scanning</li>
   <li>Scans a predefined list of commonly-used TCP and UDP ports</li>
-  <li>Allows user to customized set of TCP and UDP ports to scan</li>
+  <li>Allows user to customize set of TCP and UDP ports to scan</li>
   <li>Provides a readout of essential networking information, including:
     <ul>
       <li>Local IPv4 address</li>
