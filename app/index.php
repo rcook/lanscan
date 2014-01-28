@@ -22,8 +22,10 @@ $contentHtml = <<<END
   IPv4 endpoint in the network</li>
 </ul>
 <p>
-  This project is being actively developed and further useful network diagnostic
-  information is planned for future releases.
+  I don&rsquo;t have time to actively develop this project, so I thought
+  I&rsquo;d share my code with the world! If I&rsquo;m able to fix bugs or
+  extend existing features, or if I get good-quality pull requests, I am happy
+  to publish updates of the app to the Windows Store from to time.
 </p>
 <p>
   <a href="http://apps.microsoft.com/windows/app/lanscan/23324308-b07d-471b-b6d5-24ac9a0bb595">Click here to install this app from the Windows Store</a>
