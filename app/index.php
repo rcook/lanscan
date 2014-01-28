@@ -2,7 +2,8 @@
 $title = 'Lanscan';
 $contentHtml = <<<END
 <p>
-  This is the home of Lanscan, a simple network scanning tool available in the Windows Store for Windows 8, Windows 8.1 and Windows RT.
+  This is the home of Lanscan, a simple <a href="https://github.com/rcook/lanscan">open-source</a>
+  network scanning tool available in the Windows Store for Windows 8, Windows 8.1 and Windows RT.
 </p>
 <p>
   Features currently include:
@@ -28,10 +29,15 @@ $contentHtml = <<<END
   to publish updates of the app to the Windows Store from to time.
 </p>
 <p>
-  <a href="http://apps.microsoft.com/windows/app/lanscan/23324308-b07d-471b-b6d5-24ac9a0bb595">Click here to install this app from the Windows Store</a>
+  <a href="http://apps.microsoft.com/windows/app/lanscan/23324308-b07d-471b-b6d5-24ac9a0bb595">Install
+  this app from the Windows Store</a>
 </p>
 <p>
-  <a href="/privacy">Click on this link to read our privacy policy.</a>
+  <a href="https://github.com/rcook/lanscan">Browse this
+  app&rsquo;s source code on GitHub</a>
+</p>
+<p>
+  <a href="/privacy">Read our privacy policy</a>
 </p>
 END;
 require 'template.php';
