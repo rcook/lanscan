@@ -1,6 +1,25 @@
-<?
-$title = 'Lanscan';
-$contentHtml = <<<END
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta charset="utf-8">
+  <title>Lanscan</title>
+  <link rel="stylesheet" href="/default.css">
+</head>
+<body>
+<div id="nav">
+  <img src="/logo.png"
+       height="150"
+       width="150"
+       alt="Lanscan logo" />
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/privacy">Privacy</a></li>
+    <li><a href="/release-notes">Release notes</a></li>
+  </ul>
+</div>
+<div id="content">
+<h1>>Lanscan</h1>
 <p>
   This is the home of Lanscan, a simple <a href="https://github.com/rcook/lanscan">open-source</a>
   network scanning tool available in the Windows Store for Windows 8, Windows 8.1 and Windows RT.
@@ -39,6 +58,9 @@ $contentHtml = <<<END
 <p>
   <a href="/privacy">Read our privacy policy</a>
 </p>
-END;
-require 'template.php';
-
+</div>
+<div id="footer">
+  Copyright &copy; 2013&ndash;2018, Richard Cook. All rights reserved.
+</div>
+</body>
+</html>
