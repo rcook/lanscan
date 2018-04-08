@@ -8,7 +8,7 @@
 </head>
 <body>
 <div id="nav">
-  <img src="/static/Logo.scale-100.png"
+  <img src="/logo.png"
        height="150"
        width="150"
        alt="Lanscan logo" />
@@ -22,6 +22,8 @@
 <h1><?= htmlspecialchars($title) ?></h1>
 <?= $contentHtml ?>
 </div>
-<? require_once 'footer.php'; ?>
+<div id="footer">
+  Copyright &copy; 2013&ndash;2018, Richard Cook. All rights reserved.
+</div>
 </body>
 </html>
